@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "name": "Spam Detector",
+  "version": "1.0",
+  "description": "Detects if a text message is spam or not using a Naive Bayes model.",
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "activeTab"
+  ]
+}

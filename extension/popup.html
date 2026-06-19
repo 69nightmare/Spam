@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Spam Detector</title>
+    <link rel="stylesheet" href="popup.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <div class="logo-circle"></div>
+            <h1>Spam Shield</h1>
+        </header>
+        
+        <p class="subtitle">AI-Powered Message Analysis</p>
+        
+        <div class="input-wrapper">
+            <textarea id="messageInput" placeholder="Paste suspicious message here..."></textarea>
+            <div class="glow-effect"></div>
+        </div>
+        
+        <button id="checkBtn">
+            <span>Analyze Message</span>
+            <div class="spinner hidden" id="spinner"></div>
+        </button>
+        
+        <div id="resultContainer" class="result-container hidden">
+            <div class="result-header">
+                <span id="resultLabel">Analysis Complete</span>
+                <span id="probabilityBadge" class="badge">98%</span>
+            </div>
+            
+            <div class="progress-bar-bg">
+                <div id="progressBar" class="progress-bar-fill"></div>
+            </div>
+            
+            <p id="resultText" class="result-text"></p>
+        </div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
